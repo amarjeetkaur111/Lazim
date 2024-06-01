@@ -23,6 +23,6 @@ class TaskController extends Controller
         ]);
 
         // Redirect back with a success message
-        return back()->with('success', 'Task created successfully!');
+        return redirect()->back()->with(['msg'=>'Task created successfully!','class' => 'success']);
     }   
 }
